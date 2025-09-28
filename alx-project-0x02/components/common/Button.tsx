@@ -9,7 +9,9 @@ export default function Button({ size, shape, children }: ButtonProps) {
       : "px-6 py-3 text-lg";
 
   return (
-    <button className={`bg-blue-600 text-white ${sizeClasses} ${shape}`}>
+    <button
+      className={`bg-blue-600 hover:bg-blue-700 transition text-white ${sizeClasses} ${shape}`}
+    >
       {children}
     </button>
   );
