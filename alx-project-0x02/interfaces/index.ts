@@ -18,6 +18,7 @@ export interface PostProps {
 
 
 export interface UserProps {
+  id: number;
   name: string;
   email: string;
   address: {
@@ -25,3 +26,4 @@ export interface UserProps {
     city: string;
   };
 }
+
